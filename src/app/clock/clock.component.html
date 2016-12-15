@@ -1,0 +1,21 @@
+<div>
+  <div class="display col-sm-2-offset-1" id="months">
+    <app-time-keeper [num] = "format(months)"></app-time-keeper> Months
+  </div>
+
+  <div class="display col-sm-2-offset-3" id="days">
+    <app-time-keeper [num] = "format(days)"></app-time-keeper> Days
+  </div>
+
+  <div class="display col-sm-2-offset-5" id="hours">
+    <app-time-keeper [num] = "format(hours)"></app-time-keeper> Hours
+  </div>
+
+  <div class="display col-sm-2-offset-7" id="minutes">
+    <app-time-keeper [num] = "format(minutes)"></app-time-keeper> Minutes
+  </div>
+
+  <div class="display col-sm-2-offset-9" id="seconds" >
+    <app-time-keeper [num] = "format(seconds)" (limitReached)="increment($event)"></app-time-keeper> Seconds
+  </div>
+</div>

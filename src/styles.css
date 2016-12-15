@@ -1,1 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
+.jumbotron{
+    margin-top:5%;
+}
+
+html,body{
+    background-image: url('./assets/img/background.jpg');
+    background-size: 100%,100%;
+    font-family: 'Merienda', cursive;
+}

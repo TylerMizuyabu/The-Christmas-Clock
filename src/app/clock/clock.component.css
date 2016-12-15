@@ -1,0 +1,13 @@
+.display{
+    display:inline-block;
+    color:white;
+    padding:3%;
+    margin: 2%;
+    width:167px;
+    border-radius: 5px;
+}
+
+.jumbotron{
+    background-color: #C5A436;
+}
+

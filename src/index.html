@@ -2,13 +2,43 @@
 <html>
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+    
   <title>HolidayCountdown</title>
   <base href="/">
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+  <script src="./assets/js/index.js"></script>
+
+  <!--snow fall-->
+  <script src="./assets/js/snowstorm.js"></script>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css?family=Della+Respira|Merienda|Ultra" rel="stylesheet">
+
+  <!-- JQUERY 3.1.1-->
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+
+  <!-- BootStrap CSS-->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <!-- BootStrap JS-->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  
 </head>
 <body>
   <app-root>Loading...</app-root>
+  <audio id="musician" class="hidden" controls>
+    <source  id='song' type='audio/mpeg'>
+    Your browser does not support audio element
+  </audio>
 </body>
+<script>
+  loadSong();
+  document.getElementById('musician').onended = function(){
+    loadSong();
+  };
+</script>
 </html>

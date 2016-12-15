@@ -4,10 +4,14 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
+import { ClockComponent } from './clock/clock.component';
+import { TimeKeeperComponent } from './clock/timekeeper.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ClockComponent,
+    TimeKeeperComponent
   ],
   imports: [
     BrowserModule,
